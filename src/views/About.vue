@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <todos />
+    <filters />
   </div>
 </template>
+
+<script>
+
+import todos from '../components/todos/todos'
+import filter from '../components/filter/filter'
+
+export default {
+  components: {
+    todos,
+    'filters':filter
+  }
+}
+</script>
+
