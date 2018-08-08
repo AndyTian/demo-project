@@ -17,7 +17,7 @@ export default {
     };
   },
   components: {
-    'filterLink':link
+    filterLink: link
   }
 };
 </script>
@@ -33,6 +33,22 @@ export default {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
+}
+
+.filters .selected {
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.filters .not-selected {
+  color: black;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+.filters .not-selected:hover {
+  border-color: rgba(175, 47, 47, 0.2);
 }
 </style>
 

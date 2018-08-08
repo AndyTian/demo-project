@@ -9,9 +9,9 @@ export default {
     filter: String
   },
   computed: {
-      active(){
-          return this.$store.state.filter === this.filter
-      }
+    active() {
+      return this.$store.state.filter === this.filter;
+    }
   },
   methods: {
     setFilter() {
@@ -24,22 +24,6 @@ export default {
 <style>
 a:hover {
   cursor: pointer;
-}
-
-.filters .selected {
-  border: 1px solid transparent;
-  text-decoration: none;
-}
-
-.filters .not-selected {
-  color: black;
-  text-decoration: none;
-  border: 1px solid;
-  border-color: rgba(175, 47, 47, 0.2);
-}
-
-.filters .not-selected:hover {
-  border-color: rgba(175, 47, 47, 0.2);
 }
 </style>
 

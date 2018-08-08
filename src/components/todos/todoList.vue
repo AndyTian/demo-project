@@ -56,12 +56,8 @@ export default {
   opacity: 0;
   transform: translateY(30px);
 }
-.todo-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  font-size: 30px;
-}
 </style>
+
+
+
 
