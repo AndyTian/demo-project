@@ -52,6 +52,47 @@ export default [
     }
   },
   {
+    path: '/components',
+    name: 'components',
+    meta: {
+      icon: 'logo-buffer',
+      title: '组件'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'tables_page',
+        name: 'tables_page',
+        meta: {
+          icon: 'md-grid',
+          title: '多功能表格'
+        },
+        component: () => import('@/views/components/tables/tables.vue')
+      },
+      {
+        path: 'level_2_2',
+        name: 'level_2_2',
+        meta: {
+          access: ['super_admin'],
+          icon: 'md-funnel',
+          showAlways: true,
+          title: '二级-2'
+        },
+        children:[
+          {
+            path: 'level_2_2_1',
+            name: 'level_2_2_1',
+            meta: {
+              icon: 'md-funnel',
+              title: '三级'
+            },
+            component: () => import('@/views/multilevel/level-2-2/level-3-1.vue')
+          }
+        ]
+      }
+    ]
+  },
+  {
     path: '*',
     name: 'error_404',
     meta: {
